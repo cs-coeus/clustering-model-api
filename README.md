@@ -26,12 +26,12 @@ Request:
 Response:
 `"result"` is an array with two elements.
 - The first element is the most appropriate number of cluster K.
-- The second element is the clusters result from choosing K cluster(s).
+- The second element is the clusters result from choosing K cluster(s). Each one is cluster id for that particular sentence.
 ```json
 {
   "result": [
     3,
-    [["sentence 1"], ["sentence 2"], ["sentence 3"]]
+    [0, 1, 2]
   ]
 }
 ```
