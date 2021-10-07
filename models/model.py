@@ -1,4 +1,3 @@
-import gensim.downloader as api
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 from models.ModelInterface import ModelInterface
@@ -6,9 +5,6 @@ from typing import Any, Tuple
 
 
 class ModelClustering(ModelInterface):
-
-    def __init__(self):
-        ModelClustering.wmd = api.load('word2vec-google-news-300')
 
     @staticmethod
     def clustering(X, total_sent, proximity_matrix):
