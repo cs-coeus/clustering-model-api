@@ -10,7 +10,7 @@ import numpy as np
 class ModelClustering(ModelInterface):
 
     def __init__(self):
-        return
+        pass
 
     @staticmethod
     def clustering(X, total_sent, proximity_matrix):
